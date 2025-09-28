@@ -5,30 +5,33 @@
 </head>
 <body>
     <h1>Profil Pribadi</h1>
-    <table> <!-----TABLE------->
-        <tr>    <!-----tr--------->    
-            <th> Foto profil</th><!-----th------->
+
+    <!-- TABEL UNTUK FOTO DAN VIDEO PROFIL -->
+    <table> <!-- Tag table: untuk membuat tabel -->
+        <tr> <!-- Tag tr: baris dalam tabel -->
+            <th>Foto profil</th> <!-- Tag th: header kolom -->
             <th>Video Profil</th>
         </tr>
         <tr>
-            
-            <td>   <!-----td------->
-                <img src="foto profil.jpeg" alt="foto profil"; width="200">    <!------img------->
-            
-            <td> 
-              <video width="100" controls>
-                <source src="video profil.mp4" type="video/mp4">   <!------video------->
-              </video>
+            <td> <!-- Tag td: sel data dalam tabel -->
+                <img src="foto profil.jpeg" alt="foto profil" width="200"> <!-- Tag img: menampilkan gambar -->
+            </td>
+            <td>
+                <video width="100" controls> <!-- Tag video: menampilkan video, controls untuk tombol play/pause -->
+                    <source src="video profil.mp4" type="video/mp4">
+                </video>
             </td>
         </tr>
     </table>
+
     <h2>Tentang saya</h2>
     <p>Halo! perkenalkan saya adalah seorang pengembang web antusias dengan passion di bidang teknologi dan design kreatif</p>
+
     <h2>Keterampilan</h2>
     <table>
         <tr>
-            <th><b>keTerampilan</b></th>
-            <th><b>tingkat</b></th>
+            <th>keTerampilan</th>
+            <th>tingkat</th>
         </tr>
         <tr>
             <td>HTML/CSS</td>
@@ -40,43 +43,56 @@
         </tr>
         <tr>
             <td>Python</td>
-            <td>menengah</td>
+            <td>Menengah</td>
         </tr>
     </table>
+
     <h3>Hubungi saya</h3>
-    <table>
-    <form action="#" method="POST">
-        <tr>
-        <th>
-            <div class="form-grup">
-            <label for="nama_id">Nama:</label>
-            <input type="text"; name="nama_id" id="nama_id">
-        </div>
-            </th>
-        </tr>
-        <tr>
-        <th><div class="form-grup"><label for="email">Email: </label>
-            <input type="text"; name="email" id="email">
-        </div></th></tr>
-    </tr>
-        <td><div calss="form-grup">
-            <label for="pesan">Pesan</label>
-     <!------br------->
-            <br><textarea id="pesan" name="pesan" rows="5"></textarea>
-            </td>
-        </div>
-        <tr>
-            <td>
-                <div class="form-action">
-                    <button type="button" class="kirim">kirim pesan</button>
-                </div>
-            </td>
-        </tr>
-     </table>
+
+    <!-- FORM UNTUK PESAN -->
+    <form action="#" method="POST"> <!-- Tag form: untuk mengirim data ke server -->
+        <table>
+            <tr>
+                <th>
+                    <div class="form-grup"> <!-- Tag div: container untuk mengelompokkan elemen -->
+                        <label for="nama_id">Nama:</label> <!-- Tag label: label untuk input -->
+                        <input type="text" name="nama_id" id="nama_id"> <!-- Tag input: untuk memasukkan teks -->
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <div class="form-grup">
+                        <label for="email">Email: </label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-grup">
+                        <label for="pesan">Pesan</label>
+                        <br>
+                        <textarea id="pesan" name="pesan" rows="5"></textarea> <!-- Tag textarea: untuk menulis pesan panjang -->
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-action">
+                        <button type="button" class="kirim">kirim pesan</button> <!-- Tag button: tombol, type bisa button/submit/reset -->
+                    </div>
+                </td>
+            </tr>
+        </table>
     </form>
 
     <h4>Media Sosial</h4>
-    <p><a href="https://id.linkedin.com/">Linkedin </a>| <a href="https://github.com/">github</a> | <a href="https://x.com/">Twiter</a></p>
+    <p>
+        <a href="https://id.linkedin.com/">Linkedin</a> | <!-- Tag a (anchor): untuk membuat link -->
+        <a href="https://github.com/">github</a> | 
+        <a href="https://x.com/">Twiter</a>
+    </p>
 
 </body>
 </html>
